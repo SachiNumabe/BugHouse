@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".launcher.LauncherActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <app.nickname.myoji.bughouse.launcher.LauncherCellView
+                android:id="@+id/countActivityCell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:description="バグは5コあります"
+                app:title="Countアプリ" />
+
+            <app.nickname.myoji.bughouse.launcher.LauncherCellView
+                android:id="@+id/saveActivityCell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:description="バグは5コあります"
+                app:title="データを保存する" />
+
+            <app.nickname.myoji.bughouse.launcher.LauncherCellView
+                android:id="@+id/loadActivityCell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:description="バグは4コあります"
+                app:title="保存したデータを取得する" />
+
+            <app.nickname.myoji.bughouse.launcher.LauncherCellView
+                android:id="@+id/imageViewActivityCell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:description="バグは5コあります"
+                app:title="画像を表示する" />
+
+            <app.nickname.myoji.bughouse.launcher.LauncherCellView
+                android:id="@+id/listActivityCell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:description="バグは5コあります"
+                app:title="Todoアプリを起動する" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
