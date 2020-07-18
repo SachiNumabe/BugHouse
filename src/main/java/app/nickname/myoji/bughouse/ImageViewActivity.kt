@@ -15,7 +15,6 @@ class ImageViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState, persistentState)
         setContentView(R.layout.activity_image_view)
 
-
         val url = "https://life-is-tech.com/materials/images/summer2019_desktop_3.jpg"
         val imageView = findViewById<ImageView>(R.id.imageView)
         imageView.load(url)
