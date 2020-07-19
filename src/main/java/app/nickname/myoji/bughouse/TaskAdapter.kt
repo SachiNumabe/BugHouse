@@ -32,9 +32,11 @@ class TaskAdapter(
     }
 
     fun addAll(items: List<Task>) {
+        this.items.clear()
         this.items.addAll(items)
         notifyDataSetChanged()
     }
+
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val container: View = view.findViewById(R.id.container)
@@ -43,5 +45,6 @@ class TaskAdapter(
 
     interface ItemClickListener {
         fun onItemClick(position: Int)
+
     }
 }
